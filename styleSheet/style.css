@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+*,*::before,*::after{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+html {
+    scroll-behavior : smooth ;
+}
+
+img{
+    width : 100%;
+    height : auto;
+}
+
+a{
+    Text-decoration: none
+}
+
+li{
+     list-style: none;
+}
+
+/* above is boiler plate */
+
+:root{
+    --light-brown : rgb(247, 247, 252);
+    --dark-brown : rgb(149, 206, 206);
+}
+
+body{
+    background-color:var(--dark-brown);
+    min-height: 100vh;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container,.headingdiv{
+    max-width: 800px;
+    width: 100%;
+}
+
+.totalIncomeContainer,.totalExpenceContainer{
+    width: 40%;
+    background-color: var(--light-brown);
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0rem;
+}
+
+.balenceContainer{
+    background-color: var(--light-brown);
+    width: 90%;
+    border-radius: 8px;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 70px;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+.InputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.inputs{
+    width: 90%;
+    background-color:var(--dark-brown);
+    border-top: 0px;
+    border-left: 0ch;
+    border-right: 0ch;
+    height: 2rem;
+    padding-left: 8px;
+}
+
+.btn{
+    width: 3rem;
+    height: 25px;
+    border-radius: 5px;
+    background-color: var(--light-brown);
+}
+
+.btn:hover{
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 2px 2px 5px rgb(86, 86, 241);
+}
+
+.addedElementContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.addedElement{
+    display: flex;
+    width: 90%;
+    margin-top: 1rem;
+    background-color: var(--light-brown);
+    min-height: 2rem;
+    align-items: center;
+    padding: 0px 1rem;
+    border-radius: 5px;
+}
+
+.fa-solid{
+    margin: 0px 5px;
+}
+
+.addedElementAmount,.addedElementName{
+    flex:1;
+}
+
+.addedElementAmount{
+    text-align: end;
+    margin-right: 25px;
+}

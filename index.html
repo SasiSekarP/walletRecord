@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>walletRecord accounts manager</title>
+
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="./styleSheet/style.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="headingdiv"><h1>Account Manager</h1>
+        <hr></div>
+    <div class="container">
+        <div class="displayContainer">
+            <div class="row1">
+                <div class="totalIncomeContainer"><div>Total Income</div><div id="TotalIncome">0</div></div>
+                <div class="totalExpenceContainer"><div>Total Expence</div><div id="TotalExpence">0</div></div>
+            </div>
+            <div class="row2">
+                <div class="balenceContainer"><div>Available Balence</div><div id="AvailableBalence">0</div></div>
+            </div>
+        </div>
+        <hr>
+        <form class="InputContainer" id="FormInputContainer">
+
+            <input class="inputs" id="transactionNameInput" type="text" placeholder="Enter Name of Transaction"/>
+
+            <input class="inputs" id="transactionAmountInput" type="number" placeholder="Enter the amount | add ' - ' before expence"/>
+
+            <button type="submit" class="btn" value="">add</button>
+        </form>
+        <hr>
+        <div class="headingdiv"><h1>Transaction Details</Details></h1></div>
+        <hr>
+        <ul class="addedElementContainer" id="addedElementContainer">
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
